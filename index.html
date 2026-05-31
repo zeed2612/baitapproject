@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="SaleHub - Shop the latest fashion and clothing. Discover new arrivals, top trending styles and best sellers with free shipping on orders above $200.">
+  <title>SaleHub - Fashion &amp; Clothing Shopify</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="top-bar-row d-flex align-items-center justify-content-center gap-3">
+        <ul class="top-account list-unstyled d-none mb-0 align-items-center gap-3">
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Register account</a></li>
+          <li><a href="#">My Wishlist</a></li>
+        </ul>
+        <p class="announce mb-0">Free shipping for order above $200. <a href="#">Shop now !</a></p>
+        <div class="top-links d-none align-items-center gap-3">
+          <ul class="currency list-unstyled d-flex mb-0 align-items-center gap-2">
+            <li><a href="#" class="active">USD</a></li>
+            <li><a href="#">EUR</a></li>
+            <li><a href="#">GBP</a></li>
+          </ul>
+          <button class="btn-close-bar" aria-label="Close announcement">&times;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container-fluid px-3 px-lg-4">
+      <div class="row align-items-center g-0 header-row">
+        <div class="col-4 d-flex align-items-center">
+          <button class="btn-icon d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+          <ul class="top-social list-unstyled d-none d-lg-flex mb-0">
+            <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13 22V12h3l1-4h-4V5.5C13 4.5 13.5 4 14.5 4H17V0h-3c-3 0-5 2-5 5v3H6v4h3v10h4z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22 5.8a8 8 0 0 1-2.4.7 4 4 0 0 0 1.8-2.3 8.5 8.5 0 0 1-2.7 1A4 4 0 0 0 12 9.2 11.4 11.4 0 0 1 3.4 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5v.1a4 4 0 0 0 3.2 4 4 4 0 0 1-1.8 0 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18a11.4 11.4 0 0 0 6.2 1.8c7.4 0 11.5-6.1 11.5-11.5v-.5A8 8 0 0 0 22 5.8z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0a12 12 0 0 0-4.4 23.2c-.1-1-.2-2.5 0-3.6.2-1 1.3-6.5 1.3-6.5s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-1 3.9-.3 1.1.6 2 1.7 2 2 0 3.6-2.2 3.6-5.2 0-2.7-2-4.7-4.7-4.7-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2 .9 2.6.1.1.1.2.1.3l-.3 1.2c0 .2-.2.3-.4.2-1.4-.7-2.3-2.7-2.3-4.4 0-3.6 2.6-6.9 7.5-6.9 3.9 0 7 2.8 7 6.5 0 3.9-2.5 7.1-5.9 7.1-1.2 0-2.2-.6-2.6-1.3l-.7 2.7c-.3 1-1 2.2-1.4 3A12 12 0 1 0 12 0z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Vimeo"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 7.4c-.1 2.3-1.7 5.4-4.8 9.4-3.2 4.2-6 6.3-8.2 6.3-1.4 0-2.6-1.3-3.5-3.9-.6-2.2-1.2-4.4-1.8-6.6-.7-2.6-1.4-3.9-2.2-3.9-.2 0-.7.3-1.6.9L0 8.4c1.1-1 2.1-1.9 3.2-2.9C4.6 4.4 5.7 3.7 6.4 3.6c1.7-.2 2.7.9 3.1 3.4.4 2.7.8 4.4.9 5 .5 2.3 1 3.4 1.6 3.4.4 0 1.1-.6 1.9-1.9.9-1.3 1.3-2.3 1.4-3 .1-1-.3-1.5-1.3-1.5-.5 0-1 .1-1.5.3 1-3.2 2.9-4.7 5.7-4.6 2.1.1 3.1 1.4 2.8 4.1z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.8.3 2.2.4.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.1.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.3 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.1-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.1-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c0-1.2.3-1.8.4-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.1 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2.3 5 .1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c0 1.3.2 2.1.5 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.5C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3 0 2.1-.2 2.9-.5.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.5-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c0-1.3-.2-2.1-.5-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6 19 .3 18.2.1 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z" />
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-4 text-center">
+          <a href="#" class="logo"><img src="images/logo_350x.png" alt="SaleHub"></a>
+        </div>
+        <div class="col-4 text-end">
+          <ul class="header-icons list-unstyled mb-0 d-flex justify-content-end align-items-center">
+            <li><a href="#" class="btn-icon" aria-label="Search"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg></a></li>
+            <li class="d-none d-lg-block"><a href="#" class="btn-icon" aria-label="Account"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21a8 8 0 1 0-16 0" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg></a></li>
+            <li class="cart">
+              <a href="#" class="btn-icon" aria-label="Cart">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M6 7h12l-1.5 12h-9z" />
+                  <path d="M9 7a3 3 0 0 1 6 0" />
+                </svg>
+                <span class="cart-count">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="main-nav d-none d-lg-block">
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled mobile-nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <hr>
+      <ul class="list-unstyled mobile-sub">
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Register account</a></li>
+        <li><a href="#">Check out</a></li>
+        <li><a href="#">My Wishlist</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="hero">
+    <img src="images/s-4-1_b1f1486f-a205-466e-868c-43c691e3c3d6_2048x.jpg" alt="Summer Dresses" class="hero-img">
+    <div class="hero-content container-fluid px-4 px-lg-5">
+      <span class="hero-tag">NEW ARRIVAL</span>
+      <h1 class="hero-title">SUMMER<br><span>DRESSES</span></h1>
+      <p class="hero-sub">Uncompromising in style, quality and performance</p>
+      <a href="#" class="btn-dark">SHOP THE COLLECTION</a>
+    </div>
+    <div class="hero-dots">
+      <span class="hd active"></span>
+      <span class="hd"></span>
+      <span class="hd"></span>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container">
+      <p class="quote-text">&ldquo;There are no ugly women, there are just the ones who don&rsquo;t know how to make
+        them look good.&rdquo;</p>
+      <p class="quote-author">&mdash; SaleHub Fashion</p>
+    </div>
+  </section>
+
+  <section class="features-3">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <a href="#"><img src="images/img-1_900x.jpg" alt=""></a>
+            <h3>Solid Crop Slim Cami Top</h3>
+            <p>Explore the impeccably crafted styles defined by a modern Americana aesthetic.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card feature-tall">
+            <a href="#"><img src="images/img-2_900x.jpg" alt=""></a>
+            <h3>Denim Jacket Outfits</h3>
+            <p>See our top-picks for jean jackets that are oversized, distressed, and downright cool.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <a href="#"><img src="images/1_4b6df0cc-511d-4f31-8475-08b1346b1921_540x.jpg" alt="High Turtleneck Jumper"></a>
+            <h3>High Turtleneck Jumper</h3>
+            <p>Explore the impeccably crafted styles defined by a modern Americana aesthetic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recommended">
+    <div class="container-fluid px-4 px-lg-5">
+      <h2 class="section-title">RECOMMENDED FOR YOU</h2>
+      <div class="row g-4 product-grid">
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_bc70b428-ba01-434a-87f7-7fc276929722_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Eco aware long sleeve blouse</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price">$47.00</p>
+            <div class="swatches">
+              <span class="swatch" style="background:#5b6e3b"></span>
+              <span class="swatch" style="background:#e3a4a4"></span>
+              <span class="swatch" style="background:#dcdcdc"></span>
+              <span class="swatch-more">+2</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_35559729-bb4f-477a-afbb-d695451b9719_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Eco Aware organic cotton top</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price">$39.00</p>
+            <div class="swatches">
+              <span class="swatch" style="background:#aaa"></span>
+              <span class="swatch" style="background:#e3c2a3"></span>
+              <span class="swatch" style="background:#f3d8cf"></span>
+              <span class="swatch-more">+3</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img sold-out">
+              <img src="images/1_4b80156e-4a28-40af-a292-dc465bf35b1a_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Blended wool coat</h4>
+            <div class="rating">☆☆☆☆☆</div>
+            <p class="price">$156.00 <span class="sold-tag">Sold out</span></p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_c02958e8-91cd-4497-83ce-e5509baad4b4_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>High waist cargo joggers</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price">$72.00</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/5_225b97d3-5005-45cf-b46e-3d7d6ea50d47_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Oversized jacket with denim panels</h4>
+            <div class="rating">★★★★★</div>
+            <p class="price">$33.00</p>
+            <div class="swatches">
+              <span class="swatch" style="background:#3a4a5e"></span>
+              <span class="swatch" style="background:#dcdcdc"></span>
+              <span class="swatch" style="background:#e8d8c4"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_b5ddc236-576a-4f61-9439-8ccc8f44d2c4_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>High collar quilted jacket</h4>
+            <div class="rating">★★★★★</div>
+            <p class="price">$132.00</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_d8a840f3-d40e-4d28-8191-715f1a7874e4_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Basic sweat joggers</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price"><span class="price-old">$13.00</span> $11.00</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_a623080a-877d-4b4b-b4be-2521798cef99_720x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Loose fit trousers with belt</h4>
+            <div class="rating">☆☆☆☆☆</div>
+            <p class="price">$84.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="top-trending">
+    <div class="row g-0">
+      <div class="col-lg-7 trending-visual">
+        <img src="images/lb-3_243a2a47-8869-47c2-a1b7-ea9163d96e52_720x.png" alt="">
+        <span class="hotspot" style="top:38%;left:55%"><span class="dot">+</span></span>
+        <span class="hotspot" style="top:75%;left:30%"><span class="dot">+</span></span>
+      </div>
+      <div class="col-lg-5 trending-slider">
+        <h2 class="section-title">TOP TRENDING</h2>
+        <div id="trendingCarousel" class="carousel slide ts-wrap" data-bs-ride="carousel" data-bs-interval="5000">
+          <button class="ts-arrow ts-prev" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev"
+            aria-label="Previous">&lsaquo;</button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="ts-slide">
+                <img src="images/lb-6_a88c6dc9-2f7b-4020-96b1-f01cd6593323_720x.png" alt="">
+                <h4>Faux suede biker jacket</h4>
+                <div class="rating">★★★★☆</div>
+                <p class="price">$60.00</p>
+                <div class="swatches">
+                  <span class="swatch" style="background:#7a4a2c"></span>
+                  <span class="swatch" style="background:#3b2f25"></span>
+                  <span class="swatch" style="background:#222"></span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ts-slide">
+                <img src="images/lb-1_88ecbdcc-c1c6-47af-9cb5-1f21ebae7c4c_720x.png" alt="">
+                <h4>Classic one-breasted jacket</h4>
+                <div class="rating">★★★★½</div>
+                <p class="price">$21.00</p>
+                <div class="swatches">
+                  <span class="swatch" style="background:#222"></span>
+                  <span class="swatch" style="background:#9a9a9a"></span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ts-slide">
+                <img src="images/lb-7_177acd91-0dbb-4e63-8fe7-2311d1c193e8_720x.png" alt="">
+                <h4>Lightweight bomber jacket</h4>
+                <div class="rating">★★★★★</div>
+                <p class="price">$74.00</p>
+                <div class="swatches">
+                  <span class="swatch" style="background:#c9d24a"></span>
+                  <span class="swatch" style="background:#222"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="ts-arrow ts-next" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next"
+            aria-label="Next">&rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="best-sellers">
+    <div class="container-fluid px-4 px-lg-5">
+      <h2 class="section-title">BEST SELLERS</h2>
+      <div class="row g-4 product-grid">
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_fb07f6fc-f4bb-46a9-966d-1a0b66e6960a_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Classic one-breasted jacket</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price">$21.00</p>
+            <div class="swatches">
+              <span class="swatch" style="background:#222"></span>
+              <span class="swatch" style="background:#9a9a9a"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_423afc51-89a7-412d-b94e-1905f35af736_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Black Bomber Jacket</h4>
+            <div class="rating">★★★½☆</div>
+            <p class="price">$16.00</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_afb70b63-ea30-4380-b7d3-8e5e765569aa_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Black Denim Jacket</h4>
+            <div class="rating">★★★★½</div>
+            <p class="price">$85.00</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/1_225b9840-5824-4a66-801e-fa5640519db5_540x.jpg" alt="">
+              <div class="card-actions">
+                <button class="ca-btn" aria-label="Quick view"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5">
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                  </svg></button>
+                <button class="ca-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 7h12l-1.5 12h-9z" />
+                    <path d="M9 7a3 3 0 0 1 6 0" />
+                  </svg></button>
+              </div>
+            </div>
+            <h4>Lightweight bomber jacket</h4>
+            <div class="rating">★★★★★</div>
+            <p class="price">$74.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner-feature">
+    <div class="row g-0 bf-images">
+      <div class="col-md-6"><img src="images/img-5_1512x.jpg" alt=""></div>
+      <div class="col-md-6"><img src="images/img-8_1512x.jpg" alt=""></div>
+    </div>
+    <div class="banner-text">
+      <span class="bf-eyebrow">FEATURED PRODUCTS</span>
+      <h2>SCALLOP TRIM SOLID TEE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas accumsan velit et malesuada ante
+        tempus non viverra</p>
+      <a href="#" class="btn-light-cta">SHOP NOW</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">FROM OUR CUSTOMERS</h2>
+      <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★★</div>
+                  <p>Best purchase I&rsquo;ve made this winter! The color and knitting are exquisite and it&rsquo;s so
+                    comfy! Went from NYC to Miami without ever taking it off. Super cute!!</p>
+                  <div class="author">
+                    <img src="images/av-1_80x.png" alt="">
+                    <span>&mdash; Christina M. / From Canada</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★☆</div>
+                  <p>Clothers are addicting! Love this brand and shoe. The arch support is wonderful and helps for long
+                    hours on your body. The narrow heel is wonderfully !</p>
+                  <div class="author">
+                    <img src="images/av-2_80x.png" alt="">
+                    <span>&mdash; Dean D. / Australia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★★</div>
+                  <p>Absolutely in love with the fit and feel. The fabric is high quality and the styling looks even
+                    better than the photos. I keep coming back for more.</p>
+                  <div class="author">
+                    <img src="images/av-1_80x.png" alt="">
+                    <span>&mdash; Sarah L. / United States</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★★</div>
+                  <p>Top notch service and super fast shipping. The jacket I ordered fits perfectly and the colour is
+                    exactly as shown on the site.</p>
+                  <div class="author">
+                    <img src="images/av-2_80x.png" alt="">
+                    <span>&mdash; Marcus T. / United Kingdom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★½</div>
+                  <p>Great value, beautiful design and super comfortable. Will definitely shop here again. Their
+                    customer support team is also amazing.</p>
+                  <div class="author">
+                    <img src="images/av-1_80x.png" alt="">
+                    <span>&mdash; Linh N. / Vietnam</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="testi-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="rating">★★★★★</div>
+                  <p>The wool coat I bought is everything I wanted and more. Warm, stylish and the perfect fit.
+                    Couldn&rsquo;t recommend SaleHub more.</p>
+                  <div class="author">
+                    <img src="images/av-2_80x.png" alt="">
+                    <span>&mdash; Ana R. / Spain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators testi-dots">
+          <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container-fluid px-4 px-lg-5">
+      <h2 class="section-title">FROM OUR BLOG</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="blog-card">
+            <a href="#" class="blog-img"><img src="images/blog-1_900x.png" alt=""></a>
+            <p class="blog-date"><span class="cal">📅</span> 03 MARCH 2021</p>
+            <h4><a href="#">5 Sweet Outfit Ideas You&rsquo;ll Wear Well Beyond Valentine&rsquo;s Day</a></h4>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="blog-card">
+            <a href="#" class="blog-img"><img src="images/blog-2_900x.png" alt=""></a>
+            <p class="blog-date"><span class="cal">📅</span> 03 MARCH 2021</p>
+            <h4><a href="#">How To Be &ldquo;Good With Money,&rdquo; According To 4 Female Financial Experts</a></h4>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="blog-card">
+            <a href="#" class="blog-img"><img src="images/blog-3_900x.png" alt=""></a>
+            <p class="blog-date"><span class="cal">📅</span> 03 MARCH 2021</p>
+            <h4><a href="#">This Scandi Influencer&rsquo;s Shoe Collaboration Is The Gift That Keeps On Giving</a></h4>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-4 ig-intro">
+          <h2>Follow us on Instagram</h2>
+          <p class="ig-handle">@vinovatheme</p>
+          <p>Contemporary wardrobe staples and authentic style for the modern man and women. Follow us for the latest
+            trends.</p>
+          <p class="mt-4">Tag us and get featured <strong>@vinovatheme</strong></p>
+          <p class="ig-url">instagram.com/vinovatheme</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="ig-grid">
+            <a href="#" class="ig-1"><img src="images/img-12-3_1920x1920.jpg" alt=""></a>
+            <a href="#" class="ig-2"><img src="images/img-12-4_1920x1920.jpg" alt=""></a>
+            <a href="#" class="ig-3"><img src="images/img-12-9_720x.jpg" alt=""></a>
+            <a href="#" class="ig-4"><img src="images/img-12-5_1728x.jpg" alt=""></a>
+            <a href="#" class="ig-5"><img src="images/img-12-6_1920x.jpg" alt=""></a>
+            <a href="#" class="ig-6"><img src="images/img-8_1512x.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="policy">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="policy-item">
+            <span class="policy-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 18h32v24H3z" />
+                <path d="M35 26h13l8 9v7H35z" />
+                <circle cx="14" cy="46" r="5" />
+                <circle cx="46" cy="46" r="5" />
+              </svg></span>
+            <div>
+              <h4>Free Shipping</h4>
+              <p>On all US order or order above $99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="policy-item">
+            <span class="policy-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 8c-4 0-7 3-7 7 0 22 22 44 44 44 4 0 7-3 7-7v-7l-12-5-5 6c-9-4-15-10-18-18l6-5-5-12z" />
+              </svg></span>
+            <div>
+              <h4>Support 24/7</h4>
+              <p>Contact us 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="policy-item">
+            <span class="policy-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 32a22 22 0 1 0 6-15" />
+                <path d="M10 8v12h12" />
+              </svg></span>
+            <div>
+              <h4>30 Days Return</h4>
+              <p>Simply return it within 30 days for an exchange.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="footer-logo"><img src="images/logo_350x.png" alt="SaleHub"></a>
+          <p class="mt-3 mb-1"><strong>Call Us :</strong> +123-456-789</p>
+          <p class="mb-1">info@example.com</p>
+          <p>Monday till Friday 10 to 6 EST</p>
+          <img src="images/paypal_240x.png" alt="payments" class="payment-img mt-3">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>CUSTOMER SUPPORT</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Shipping and Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Charts</a></li>
+            <li><a href="#">Email Signup</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>OUR SHOP</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Top Trending</a></li>
+            <li><a href="#">Autumn Collection</a></li>
+            <li><a href="#">Back in Stock</a></li>
+            <li><a href="#">Bikini Tops</a></li>
+            <li><a href="#">Bikini Bottoms</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>NEWSLETTER</h5>
+          <p>Get 15% off your first purchase! Plus, be the first to know about sales, new product launches and exclusive
+            offers!</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Join</button>
+          </form>
+          <ul class="footer-social list-unstyled d-flex mt-4 mb-0">
+            <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13 22V12h3l1-4h-4V5.5C13 4.5 13.5 4 14.5 4H17V0h-3c-3 0-5 2-5 5v3H6v4h3v10h4z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22 5.8a8 8 0 0 1-2.4.7 4 4 0 0 0 1.8-2.3 8.5 8.5 0 0 1-2.7 1A4 4 0 0 0 12 9.2 11.4 11.4 0 0 1 3.4 4.7a4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5v.1a4 4 0 0 0 3.2 4 4 4 0 0 1-1.8 0 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18a11.4 11.4 0 0 0 6.2 1.8c7.4 0 11.5-6.1 11.5-11.5v-.5A8 8 0 0 0 22 5.8z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0a12 12 0 0 0-4.4 23.2c-.1-1-.2-2.5 0-3.6.2-1 1.3-6.5 1.3-6.5s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-1 3.9-.3 1.1.6 2 1.7 2 2 0 3.6-2.2 3.6-5.2 0-2.7-2-4.7-4.7-4.7-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2 .9 2.6.1.1.1.2.1.3l-.3 1.2c0 .2-.2.3-.4.2-1.4-.7-2.3-2.7-2.3-4.4 0-3.6 2.6-6.9 7.5-6.9 3.9 0 7 2.8 7 6.5 0 3.9-2.5 7.1-5.9 7.1-1.2 0-2.2-.6-2.6-1.3l-.7 2.7c-.3 1-1 2.2-1.4 3A12 12 0 1 0 12 0z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Vimeo"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 7.4c-.1 2.3-1.7 5.4-4.8 9.4-3.2 4.2-6 6.3-8.2 6.3-1.4 0-2.6-1.3-3.5-3.9-.6-2.2-1.2-4.4-1.8-6.6-.7-2.6-1.4-3.9-2.2-3.9-.2 0-.7.3-1.6.9L0 8.4c1.1-1 2.1-1.9 3.2-2.9C4.6 4.4 5.7 3.7 6.4 3.6c1.7-.2 2.7.9 3.1 3.4.4 2.7.8 4.4.9 5 .5 2.3 1 3.4 1.6 3.4.4 0 1.1-.6 1.9-1.9.9-1.3 1.3-2.3 1.4-3 .1-1-.3-1.5-1.3-1.5-.5 0-1 .1-1.5.3 1-3.2 2.9-4.7 5.7-4.6 2.1.1 3.1 1.4 2.8 4.1z" />
+                </svg></a></li>
+            <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2 0 1.8.3 2.2.4.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.1.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c0 1.2-.3 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.1-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2 0-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.1-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c0-1.2.3-1.8.4-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.1 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2z" />
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="backTop" aria-label="Back to top">&uarr;</button>
+    <div class="copyright">
+      <div class="container-fluid px-4 px-lg-5 d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="mb-0">Đồng Nguyễn Minh Quân - 25211TT0123 © 2021 Vinovathemes. All rights reserved.</p>
+        <ul class="list-unstyled d-flex mb-0 footer-mini-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
